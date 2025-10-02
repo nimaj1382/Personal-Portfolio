@@ -141,7 +141,7 @@ a:hover {
 
 section {
     padding-top: 2vh;
-    height: 96vh;
+    height: 100vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -157,7 +157,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
+    height: 90vh;
 }
 
 .section__pic-container {
@@ -201,7 +201,7 @@ section {
 
 .icon {
     cursor: pointer;
-    height: 2rem;
+    height: 1.5rem;
 }
 
 #github-icon {
@@ -263,6 +263,9 @@ section {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .about-details-container {
@@ -270,11 +273,178 @@ section {
     flex-direction: column;
 }
 
-.about-containers, .about-details-container {
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background-color: rgba(255, 236, 136, 0.5);
+    border-radius: 16px 16px 16px 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    min-width: fit-content;
+    transition: all 0.3s ease;
+}
+
+.details-container:hover {
+    background-color: rgba(255, 236, 136, 0.8);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+}
+
+.section-container {
+    gap: 2rem;
+    height: 50%;
+}
+
+.section__pic-container {
+    height: 300px;
+    width: 300px;
+    margin: auto 0;
+}
+
+.text-container {
+    flex: 2;
+    text-align: center;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.experience-sub-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #750f71;
+}
+
+.experience-details-container {
     display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#experience-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.languages {
+    display: flex;
+    text-align: initial;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    max-width: 20rem;
+    justify-content: space-between;
+}
+
+.academic {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 2rem;
+    max-width: 20rem;
+}
+
+.languages article {
+    display: flex;
+    width: 7rem;
+    gap: 0.5rem;
+}
+
+.academic article {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+article .icon {
+    cursor: default;
+}
+
+.article-container {
+    margin: 1rem;
+    justify-content: space-around;
+    display: grid;
+}
+
+article div {
+    margin-left: 0.5rem;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.projects-pic {
+    height: 200px;
+    width: 200px;
+}
+
+.project-description-container{
+    display: flex;
+    align-content: space-between;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    max-width: 10rem;
+    height: 7rem;
+}
+
+.color-container {
+    border-color: #750f71;
+    background: rgba(255, 236, 136, 0.5);
 
 }
 
-.about-pic {
+.project-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
 
+/* CONTACT SECTION */
+
+#contact {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 1.5rem;
+    background-color: rgba(255, 236, 136, 0.5);
+    border: 2px solid #750f71;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 2rem auto;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 1rem;
+}
+
+.contact-info-container p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.contact-icon {
+    height: 1.5rem;
+    cursor: default;
 }
