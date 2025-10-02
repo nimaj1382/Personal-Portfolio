@@ -1,0 +1,280 @@
+/* GENERAL STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbf0c0;
+    color: #4e064b;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: #4e064b;
+}
+
+/* TRANSITION */
+
+a, .btn {
+    transition: all 0.3s ease;
+}
+
+/* DESKTOP NAV */
+
+nav, .nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav-links {
+    list-style: none;
+    gap: 2rem;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+
+a {
+    color: #4e064b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6f91;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #470505;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: #470505;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(255, 236, 136, 1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    /* smooth display of drop down menu and none sharp corners */
+    border-radius: 16px 16px 16px 16px;
+
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    color: #4e064b;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links li{
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-icon.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+/* SECTIONS */
+
+section {
+    padding-top: 2vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__pic-container {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    margin: auto 0;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    text-align: center;
+}
+
+.section__text__p2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.socials-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+#github-icon {
+    transition: all 0.3s ease;
+}
+
+/* BUTTONS */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.7rem;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-color-1 {
+    border: 2px solid #750f71;
+    color: #4e064b;
+}
+
+.btn-color-2 {
+    border: 2px solid #7e094f;
+    color: #4e064b;
+}
+
+.btn-color-1:hover {
+    background-color: rgba(76, 160, 193, 0.89);
+    color: #e8d282;
+    border: 2px solid #4ca0c1;
+}
+
+.btn-color-2:hover {
+    background-color: rgba(255, 111, 145, 0.89);
+    color: #e8d282;
+    border: 2px solid #ff6f91;
+}
+
+.btn-container {
+    gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-details-container {
+    display: flex;
+
+}
+
+.about-pic {
+
+}
