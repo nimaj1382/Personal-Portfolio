@@ -448,3 +448,12 @@ article div {
     height: 1.5rem;
     cursor: default;
 }
+
+/* FOOTER */
+
+footer {
+    height: 14vh;
+    margin: 0;
+    padding: 2rem;
+    text-align: center;
+}
