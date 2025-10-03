@@ -6,3 +6,48 @@
         display: flex;
     }
 }
+
+@media screen and (max-width: 1170px){
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1210px){
+    .about-containers {
+        flex-wrap: wrap;
+    }
+
+    #experience, .experience-details-container {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 1140px){
+    #profile, .section-container {
+        display: grid;
+        align-content: center;
+    }
+
+    section, .section-container {
+        height: fit-content;
+    }
+
+    section {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    .section__pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+
+    .about-containers {
+        margin-top: 0;
+    }
+}

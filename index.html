@@ -27,10 +27,12 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <ul>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -67,7 +69,7 @@
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="section__pic-container">
-                <img src="assets/Pomni2-No-Background.png" class="about-pic">
+                <img src="assets/Pomni2-No-Background.png" class="about-pic" alt="About Me Picture">
 
             </div>
             <div class="about-details-container">
@@ -82,7 +84,7 @@
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>
+                    <p class="about-description">
                         B.Sc. Student at Amirkabir University of Technology, with +6 years of programming experience, and 2 years of teacher assistance experience.
                     </p>
                 </div>
@@ -101,35 +103,35 @@
                     <div class="article-container">
                         <div class="languages">
                             <article>
-                                <img src="assets/check-icon.png" class="icon">
+                                <img src="assets/check-icon.png" class="icon" alt="Check Icon">
                                 <div>
                                     <h4>Python</h4>
                                     <p>Expert</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="assets/check-icon.png" class="icon">
+                                <img src="assets/check-icon.png" class="icon" alt="Check Icon">
                                 <div>
                                     <h4>C/C++</h4>
                                     <p>Advanced</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="assets/check-icon.png" class="icon">
+                                <img src="assets/check-icon.png" class="icon" alt="Check Icon">
                                 <div>
                                     <h4>Go</h4>
                                     <p>Intermediate</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="assets/check-icon.png" class="icon">
+                                <img src="assets/check-icon.png" class="icon" alt="Check Icon">
                                 <div>
                                     <h4>HTML/CSS</h4>
                                     <p>Basic</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="assets/check-icon.png" class="icon">
+                                <img src="assets/check-icon.png" class="icon" alt="Check Icon">
                                 <div>
                                     <h4>SQL</h4>
                                     <p>Basic</p>
@@ -145,21 +147,21 @@
                     <div class="article-container">
                         <div class="academic">
                             <article>
-                                <img src="assets/check-icon.png" class="icon">
+                                <img src="assets/check-icon.png" class="icon" alt="Check Icon">
                                 <div>
                                     <h4>National Computer Olympiad</h4>
                                     <p>Certificate of Excellence (rank 57)</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="assets/check-icon.png" class="icon">
+                                <img src="assets/check-icon.png" class="icon" alt="Check Icon">
                                 <div>
                                     <h4>Algorithm Design</h4>
                                     <p>Strong knowledge of data structures and algorithms</p>
                                 </div>
                             </article>
                             <article>
-                                <img src="assets/check-icon.png" class="icon">
+                                <img src="assets/check-icon.png" class="icon" alt="Check Icon">
                                 <div>
                                     <h4>Problem Solving</h4>
                                     <p>5 years of problem-solving programming experience</p>
@@ -174,51 +176,55 @@
     <section id="projects">
         <p class="section__text__p1">My Works</p>
         <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers" id="projects-container">
-                <img src="assets/Pomni3-No-Background.png" class="projects-pic">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <div class="project-description-container">
-                            <p class="project-description">
-                                A solver for Towers game or known as Skyscrapers using csp method in python
-                            </p>
-                        </div>
-                        <h2 class="experience-sub-title project-title">
-                            Towers Solver
-                        </h2>
-                        <div class="btn btn-color-1" onclick="window.open('https://github.com/nimaj1382/Towers-Solver', '_blank')">
-                            GitHub
-                        </div>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <div class="project-description-container">
-                            <p class="project-description">
-                                A handwritten digit recognition system using Least Squares method in python
-                            </p>
-                        </div>
-                        <h2 class="experience-sub-title project-title">
-                            Digit Recognition
-                        </h2>
-                        <div class="btn btn-color-2" onclick="window.open('https://github.com/nimaj1382/Handwritten-Digit-Recognition', '_blank')">
-                            GitHub
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="assets/Pomni3-No-Background.png" class="projects-pic" alt="Projects Picture">
+            </div>
+            <div class="experience-details-container">
+                <div class="about-containers" id="projects-container">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <div class="project-description-container">
+                                <p class="project-description">
+                                    A solver for Towers game or known as Skyscrapers using csp method in python
+                                </p>
+                            </div>
+                            <h2 class="experience-sub-title project-title">
+                                Towers Solver
+                            </h2>
+                            <div class="btn btn-color-1" onclick="window.open('https://github.com/nimaj1382/Towers-Solver', '_blank')">
+                                GitHub
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <div class="project-description-container">
-                            <p class="project-description">
-                                A compiler that converts B-minor program to C program, implemented in C
-                            </p>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <div class="project-description-container">
+                                <p class="project-description">
+                                    A handwritten digit recognition system using Least Squares method in python
+                                </p>
+                            </div>
+                            <h2 class="experience-sub-title project-title">
+                                Digit Recognition
+                            </h2>
+                            <div class="btn btn-color-2" onclick="window.open('https://github.com/nimaj1382/Handwritten-Digit-Recognition', '_blank')">
+                                GitHub
+                            </div>
                         </div>
-                        <h2 class="experience-sub-title project-title">
-                            B-minor to C
-                        </h2>
-                        <div class="btn btn-color-1" onclick="window.open('https://github.com/nimaj1382/b-minor_to_c_compiler', '_blank')">
-                            GitHub
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <div class="project-description-container">
+                                <p class="project-description">
+                                    A compiler that converts B-minor program to C program, implemented in C
+                                </p>
+                            </div>
+                            <h2 class="experience-sub-title project-title">
+                                B-minor to C
+                            </h2>
+                            <div class="btn btn-color-1" onclick="window.open('https://github.com/nimaj1382/b-minor_to_c_compiler', '_blank')">
+                                GitHub
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -230,13 +236,13 @@
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <img src="assets/email-icon.png" class="icon contact-icon">
+                <img src="assets/email-icon.png" class="icon contact-icon" alt="Email Icon">
                 <p>
                     <a href="mailto:nimaj1382@gmail.com">nimaj1382@gmail.com</a>
                 </p>
             </div>
             <div class="contact-info-container">
-                <img src="assets/telegram-icon.png" class="icon contact-icon">
+                <img src="assets/telegram-icon.png" class="icon contact-icon" alt="Telegram Icon">
                 <p>
                     <a href="https://t.me/NimaJHP">@NimaJHP</a>
                 </p>
